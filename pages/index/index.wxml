@@ -1,10 +1,10 @@
 <!--index.wxml-->
 <view class="container" mode="aspectFill">
   <view class="userinfo">
-    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{localDate.baseInfo.photo}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{localDate.baseInfo.name}}</text>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <text class="user-motto">{{localDate.baseInfo.school}}</text>
   </view>
 </view>

@@ -1,5 +1,6 @@
 //index.js
 //获取应用实例
+const local = require('../../utils/local.js')
 const app = getApp()
 
 Page({
@@ -16,6 +17,10 @@ Page({
     })
   },
   onLoad: function () {
+    this.setData({
+      localDate: local
+    })
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
