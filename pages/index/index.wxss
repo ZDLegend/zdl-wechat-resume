@@ -8,12 +8,6 @@
   width:100%;
 }
 
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .userinfo-avatar {
   width: 200rpx;
   height: 200rpx;
@@ -21,11 +15,7 @@
   border-radius: 50%;
 }
 
-.userinfo-nickname {
-  color: #fff;
-}
-
-.usermotto {
-  margin-top: 200px;
+.userinfo {
+  display:flex;
   color: #fff;
 }
