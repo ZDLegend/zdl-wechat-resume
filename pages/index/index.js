@@ -4,8 +4,6 @@ const local = require('../../utils/local.js')
 
 Page({
   data: {
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   bindViewTap: function() {
