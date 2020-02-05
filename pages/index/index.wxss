@@ -18,4 +18,11 @@
 .userinfo {
   display:flex;
   color: #fff;
+  padding: 2%;
+}
+
+.text {
+  left: 20%;
+  bottom:-30%;
+  position:absolute;
 }

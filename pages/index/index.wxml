@@ -2,15 +2,17 @@
 <view style="width: 100%; height: 100%" xmlns:wx="http://www.w3.org/1999/xhtml">
   <view class="container" mode="aspectFill">
     <image bindtap="bindViewTap" class="userinfo-avatar" src="{{localDate.baseInfo.photo}}" mode="cover"></image>
-    <text class="userinfo">姓名：{{localDate.baseInfo.name}}</text>
-    <text class="userinfo">性别：{{localDate.baseInfo.sex}}</text>
-    <text class="userinfo">出生年月：{{localDate.baseInfo.birthday}}</text>
-    <text class="userinfo">学历：{{localDate.baseInfo.diploma}}</text>
-    <text class="userinfo">院校：{{localDate.baseInfo.school}}</text>
-    <text class="userinfo">工作地点：{{localDate.baseInfo.location}}</text>
-    <text class="userinfo">电话：{{localDate.baseInfo.mobilePhone}}</text>
-    <text class="userinfo">邮箱：{{localDate.baseInfo.email}}</text>
-    <text class="userinfo">GitHub：{{localDate.baseInfo.githubUrl}}</text>
-    <text class="userinfo">职位：{{localDate.baseInfo.title}}</text>
+    <view class="text" style="width: 100%; height: 100%">
+      <text class="userinfo">姓名：{{localDate.baseInfo.name}}</text>
+      <text class="userinfo">性别：{{localDate.baseInfo.sex}}</text>
+      <text class="userinfo">出生年月：{{localDate.baseInfo.birthday}}</text>
+      <text class="userinfo">学历：{{localDate.baseInfo.diploma}}</text>
+      <text class="userinfo">院校：{{localDate.baseInfo.school}}</text>
+      <text class="userinfo">工作地点：{{localDate.baseInfo.location}}</text>
+      <text class="userinfo">电话：{{localDate.baseInfo.mobilePhone}}</text>
+      <text class="userinfo">邮箱：{{localDate.baseInfo.email}}</text>
+      <text class="userinfo">GitHub：{{localDate.baseInfo.githubUrl}}</text>
+      <text class="userinfo">职位：{{localDate.baseInfo.title}}</text>
+    </view>
   </view>
 </view>
