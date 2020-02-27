@@ -1,5 +1,6 @@
 const LocalData = {
   baseInfo: {
+    enName:'暗浩',
     title: 'java开发工程师',  //职位英文名
     nameAndSex: '暗号 / 男', //中文名/性别
     birthday: '1992/09/04', //生日
