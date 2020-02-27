@@ -1,9 +1,11 @@
 //index.js
 //获取应用实例
-const local = require('../../utils/local.js')
+import LocalData from '../../utils/local.js'
+import Cain from '../../utils/Cain.js'
 
 Page({
   data: {
+    overlay: true
   },
   //事件处理函数
   bindViewTap: function() {
@@ -12,9 +14,9 @@ Page({
     })
   },
   onLoad: function () {
-    this.setData({
-      localDate: local
-    })
+    this.setData(LocalData)
+    wx.hideLoading()
+    this.setData({ 'overlay': false })
   },
   touchStart: function (t) {
     this.setData({
@@ -33,5 +35,23 @@ Page({
     } else if (a > 50) {
       
     }
+  },
+  //打开/关闭手风琴项
+  toggleAccordionItem(e) {
+    let item = this.data.workList[e.currentTarget.dataset.index];
+
+    item.isShow = !item.isShow
+
+    this.setData({
+      workList: this.data.workList
+    })
+  },
+  //设置剪切板内容
+  setClipboard(e) {
+    Cain.setClipboard(e.currentTarget.dataset.content)
+  },
+  //打电话
+  callPhone() {
+    Cain.callPhone(this.data.baseInfo.mobilePhone)
   }
 })
