@@ -18,7 +18,6 @@
   <!-- 关于我 区域-->
   <view class="aboutMe area hidden">
     <view class="title ">
-
       关于我
     </view>
     <view class="iconArea">
