@@ -10,7 +10,6 @@
       <view class="enName">{{baseInfo.enName}}</view>
       <view class="title">{{baseInfo.title}}</view>
     </view>
-
     <image src="../../image/bg.jpg" class="bannerBg" />
     <view class="bannerOverlay"></view>
   </view>
@@ -69,7 +68,6 @@
                 <view  class="detail"><text class="fontBold">介绍：</text>{{pItem.info}}</view>
                 <view  class="detail"><text class="fontBold">担当：</text>{{pItem.duty}}</view>
                 <view  class="detail"><text class="fontBold">技术：</text>{{pItem.skill}}</view>
-              
               </block>
             </view>
           </view>
@@ -148,7 +146,6 @@
       </view>
     </view>
   </view>
-
    <view class="powerBy" bindtap="setClipboard" data-content="https://github.com/ZDLegend/zdl-wechat-resume">
     Powered By <text class="link">GitHub : @ZDLegend/zdl-wechat-resume</text>
    </view>
