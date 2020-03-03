@@ -27,8 +27,46 @@ Page({
     if (a < -50) {
 
     } else if (a > 50) {
-      
+
     }
+  },
+  onShow: function () {
+    let t = this;
+    t.setData({
+      bannerBg: "ripple fadeIn",
+      titleResume: "ripple bounceIn",
+      enName: "ripple bounceIn",
+      title: "ripple lightSpeedIn"
+    })
+    // setTimeout(function () {
+    //       t.setData({
+    //         bannerBg: "ripple fadeIn",
+    //       })
+    //     },
+    //     1e3), setTimeout(function () {
+    //       t.setData({
+    //         titleResume: "ripple bounceIn"
+    //       })
+    //     },
+    //     1500), setTimeout(function () {
+    //       t.setData({
+    //         enName: "ripple bounceIn"
+    //       })
+    //     },
+    //     1800), setTimeout(function () {
+    //       t.setData({
+    //         title: "ripple lightSpeedIn"
+    //       })
+    //     },
+    //     1900)
+  },
+  onHide: function () {
+    this.setData({
+      bannerBg: "",
+      titleResume: "",
+      enName: "",
+      title: "",
+    })
   },
   //打开/关闭手风琴项
   toggleAccordionItem(e) {

@@ -14,16 +14,16 @@
  *   例:<view class="ripple infinite bounce">element</view>
  */
 .ripple {
-	animation-duration:1s;
+	animation-duration:2s;
 	animation-fill-mode:both
 }
 .ripple.infinite {
 	animation-iteration-count:infinite
 }
-.ripple.hinge {
+.ripple.hinge2 {
 	animation-duration:2s
 }
-.ripple.hinge2 {
+.ripple.hinge5 {
 	animation-duration:5s
 }
 .ripple.bounceIn,.ripple.bounceOut,.ripple.flipOutX,.ripple.flipOutY {

@@ -6,11 +6,11 @@
   <view class="banner">
     <image src="{{baseInfo.photo}}" class="head hidden" />
     <view class="info hidden">
-      <view class="titleResume">RESUME</view>
-      <view class="enName">{{baseInfo.enName}}</view>
-      <view class="title">{{baseInfo.title}}</view>
+      <view class="titleResume {{titleResume}}">RESUME</view>
+      <view class="enName {{enName}}">{{baseInfo.enName}}</view>
+      <view class="title {{title}}">{{baseInfo.title}}</view>
     </view>
-    <image src="../../image/bg.jpg" class="bannerBg" />
+    <image src="../../image/bg.jpg" class="bannerBg {{bannerBg}}" />
     <view class="bannerOverlay"></view>
   </view>
 
