@@ -65,9 +65,9 @@
               <block wx:for="{{item.projectList}}" wx:key="pid" wx:for-index="pid" wx:for-item="pItem">
                 <view class="hr"></view>
                 <view class="detail"><text class="fontBold">项目名：</text>{{pItem.projectName}}</view>
-                <view  class="detail"><text class="fontBold">介绍：</text>{{pItem.info}}</view>
-                <view  class="detail"><text class="fontBold">担当：</text>{{pItem.duty}}</view>
-                <view  class="detail"><text class="fontBold">技术：</text>{{pItem.skill}}</view>
+                <view class="detail"><text class="fontBold">介绍：</text>{{pItem.info}}</view>
+                <view class="detail"><text class="fontBold">担当：</text>{{pItem.duty}}</view>
+                <view class="detail"><text class="fontBold">技术：</text>{{pItem.skill}}</view>
               </block>
             </view>
           </view>
