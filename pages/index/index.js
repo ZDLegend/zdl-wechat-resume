@@ -32,12 +32,27 @@ Page({
   },
   onShow: function () {
     let t = this;
-    t.setData({
-      bannerBg: "ripple fadeIn",
-      titleResume: "ripple bounceIn",
-      enName: "ripple bounceIn",
-      title: "ripple lightSpeedIn"
-    })
+    setTimeout(function () {
+          t.setData({
+            bannerBg: "animated fadeIn",
+          })
+        },
+        1e3), setTimeout(function () {
+          t.setData({
+            titleResume: "animated bounceIn"
+          })
+        },
+        1500), setTimeout(function () {
+          t.setData({
+            enName: "animated bounceIn"
+          })
+        },
+        1800), setTimeout(function () {
+          t.setData({
+            title: "animated lightSpeedIn"
+          })
+        },
+        1900)
   },
   onHide: function () {
     this.setData({
