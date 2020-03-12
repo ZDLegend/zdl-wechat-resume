@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="ResumeContainer">
-  <view class="overlay" wx-if="{{overlay}}"></view>
+<!--  <view class="overlay" wx-if="{{overlay}}"></view>-->
   
   <!-- banner 区域-->
   <view class="banner">
@@ -10,7 +10,7 @@
       <view class="enName {{enName}}">{{baseInfo.enName}}</view>
       <view class="title {{title}}">{{baseInfo.title}}</view>
     </view>
-    <image src="../../image/bg.jpg" class="bannerBg {{bannerBg}}" />
+    <image src="../../images/bg.jpg" class="bannerBg {{bannerBg}}" />
     <view class="bannerOverlay"></view>
   </view>
 
@@ -20,31 +20,31 @@
       关于我
     </view>
     <view class="iconArea">
-      <image src="../../image/icon1.png" />
+      <image src="../../images/icon1.png" />
       <text>{{baseInfo.nameAndSex}}</text>
     </view>
     <view class="iconArea">
-      <image src="../../image/icon2.png" />
+      <image src="../../images/icon2.png" />
       <text>{{baseInfo.birthday}}</text>
     </view>
     <view class="iconArea">
-      <image src="../../image/icon3.png" />
+      <image src="../../images/icon3.png" />
       <text>{{baseInfo.diplomaAndSchool}}</text>
     </view>
     <view class="iconArea">
-      <image src="../../image/icon4.png" />
+      <image src="../../images/icon4.png" />
       <text>{{baseInfo.workAge}} (工作年限)</text>
     </view>
     <view class="iconArea">
-      <image src="../../image/icon5.png" />
+      <image src="../../images/icon5.png" />
       <text>{{baseInfo.location}}</text>
     </view>
     <view class="iconArea">
-      <image src="../../image/icon6.png" />
+      <image src="../../images/icon6.png" />
       <text>{{baseInfo.wantPosition}}</text>
     </view>
     <view class="iconArea">
-      <image src="../../image/icon7.png" />
+      <image src="../../images/icon7.png" />
       <text>{{baseInfo.salary}}</text>
     </view>
   </view>
@@ -97,10 +97,10 @@
         <view>
           <text>{{item.name}}</text>
           <block wx:for="{{item.star}}" wx:key="index">
-            <image src="../../image/star.png" />
+            <image src="../../images/star.png" />
           </block>
           <block wx:for="{{5 - item.star}}" wx:key="index">
-            <image src="../../image/star_e.png" />
+            <image src="../../images/star_e.png" />
           </block>
         </view>
       </block>
@@ -113,24 +113,24 @@
     </view>
     <view class="haveData content" wx:if="{{isShowContact}}">
       <view class="iconArea" bindtap='callPhone'>
-        <image src="../../image/icon8.png" />
+        <image src="../../images/icon8.png" />
         <text class="link" >{{baseInfo.mobilePhone}}</text>
       </view>
       <view class="iconArea"   bindtap="setClipboard" data-content="{{baseInfo.email}}">
-        <image src="../../image/icon9.png" />
+        <image src="../../images/icon9.png" />
         <text class="link">{{baseInfo.email}}</text>
       </view>
       <view class="iconArea" bindtap="setClipboard" data-content="{{baseInfo.wechatNo}}" >
-        <image src="../../image/icon10.png" />
+        <image src="../../images/icon10.png" />
         <text class="link">{{baseInfo.wechatNo}}</text>
       </view>
       <view class="iconArea" wx:if="{{baseInfo.github}}" bindtap="setClipboard" data-content="{{baseInfo.githubUrl}}">
-        <image src="../../image/icon11.png" />
+        <image src="../../images/icon11.png" />
         <text class="link">{{baseInfo.github}}</text>
       </view>
     </view>
     <view class="noData content" wx:if="{{!isShowContact}}">
-      <image src="../../image/icon12.png" />
+      <image src="../../images/icon12.png" />
       <view>作者暂时隐藏了联系方式，可能最近没有找工作的想法</view>
     </view>
   </view>
@@ -141,7 +141,7 @@
     </view>
     <view class="content">
       <view class="iconArea" wx:if="{{baseInfo.github}}">
-        <image src="../../image/icon13.png" />
+        <image src="../../images/icon13.png" />
         <text>感谢您花时间阅读我的简历，期待能有机会和您共事。</text>
       </view>
     </view>
@@ -149,4 +149,13 @@
    <view class="powerBy" bindtap="setClipboard" data-content="https://github.com/ZDLegend/zdl-wechat-resume">
     Powered By <text class="link">GitHub : @ZDLegend/zdl-wechat-resume</text>
    </view>
+  <image class="bottom-top {{ bottom_top }}" src="../../images/5.png"></image>
+  <image class="bottom-one {{ bottom_one }}" src="../../images/1.png"></image>
+  <image class="bottom-one2 {{ bottom_one }}" src="../../images/1.png"></image>
+  <image class="bottom-two {{ bottom_two }}" src="../../images/11.png"></image>
+  <image class="bottom-two2 {{ bottom_two }}" src="../../images/11.png"></image>
+  <image class="bottom-three {{ bottom_three }}" src="../../images/12.png"></image>
+  <image class="bottom-three2 {{ bottom_three }}" src="../../images/12.png"></image>
+  <image class="bottom-four {{ bottom_four }}" src="../../images/10.png"></image>
+  <image class="bottom-four2 {{ bottom_four }}" src="../../images/10.png"></image>
 </view>

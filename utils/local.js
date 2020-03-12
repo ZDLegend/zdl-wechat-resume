@@ -13,7 +13,7 @@ const LocalData = {
     email: '463764941@qq.com',//邮箱
     github: 'ZDLegend', //github 用户名
     githubUrl: 'https://github.com/ZDLegend', //github主页
-    photo:'../../image/photo.jpeg',
+    photo:'../../images/photo.jpeg',
     wechatNo: 'zmh521125',//微信号
   },
   isShowContact: true, //是否显示联系方式

@@ -53,6 +53,7 @@ Page({
           })
         },
         1900)
+    this.showAnimated()
   },
   onHide: function () {
     this.setData({
@@ -79,5 +80,53 @@ Page({
   //打电话
   callPhone() {
     Cain.callPhone(this.data.baseInfo.mobilePhone)
+  },
+  showAnimated: function () {
+    var t = this;
+    setTimeout(() => {
+      t.setData({
+        bottom: "animated slideInUp"
+      })
+    }, 2e3);
+    setTimeout(function () {
+      t.setData({
+        bottom_one: "animated slideInUp"
+      })
+    }, 2100);
+    setTimeout(function () {
+      t.setData({
+        bottom_two: "animated slideInUp"
+      })
+    }, 2200);
+    setTimeout(function () {
+      t.setData({
+        bottom_three: "animated slideInUp"
+      })
+    }, 2300),
+        setTimeout(function () {
+          t.setData({
+            bottom_four: "animated slideInUp"
+          })
+        }, 2400),
+        setTimeout(function () {
+          t.setData({
+            bottom_one: "bottom-4s-move"
+          })
+        }, 3100),
+        setTimeout(function () {
+          t.setData({
+            bottom_two: "bottom-3s-move"
+          })
+        }, 3200),
+        setTimeout(function () {
+          t.setData({
+            bottom_three: "bottom-2s-move"
+          })
+        }, 3300),
+        setTimeout(function () {
+          t.setData({
+            bottom_four: "bottom-1s-move"
+          })
+        }, 3400)
   }
 })
