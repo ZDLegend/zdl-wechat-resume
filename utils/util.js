@@ -14,6 +14,15 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const getInfo = callBack => {
+  wx.cloud.database().collection('info').get({
+    success: function (res) {
+      callBack(res)
+    }
+  })
+}
+
 module.exports = {
+  getInfo: getInfo,
   formatTime: formatTime
 }

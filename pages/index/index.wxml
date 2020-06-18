@@ -87,22 +87,14 @@
       </block>
     </view>
   </view>
-  <!-- 技能关键字区域-->
-  <view class="starList area hidden">
+  <!-- 技能关键字区域 starList-->
+  <view class="skillList area hidden">
     <view class="title">
-      技能关键字
+      突出工作业绩
     </view>
     <view class="content">
       <block wx:for="{{starList}}" wx:key="index">
-        <view>
-          <text>{{item.name}}</text>
-          <block wx:for="{{item.star}}" wx:key="index">
-            <image src="../../images/star.png" />
-          </block>
-          <block wx:for="{{5 - item.star}}" wx:key="index">
-            <image src="../../images/star_e.png" />
-          </block>
-        </view>
+        <view>{{item}}</view>
       </block>
     </view>
   </view>
@@ -149,7 +141,7 @@
    <view class="powerBy" bindtap="setClipboard" data-content="https://github.com/ZDLegend/zdl-wechat-resume">
     Powered By <text class="link">GitHub : @ZDLegend/zdl-wechat-resume</text>
    </view>
-  <image class="bottom-top {{ bottom_top }}" src="../../images/5.png"></image>
+  <!-- <image class="bottom-top {{ bottom_top }}" src="../../images/5.png"></image>
   <image class="bottom-one {{ bottom_one }}" src="../../images/1.png"></image>
   <image class="bottom-one2 {{ bottom_one }}" src="../../images/1.png"></image>
   <image class="bottom-two {{ bottom_two }}" src="../../images/11.png"></image>
@@ -157,5 +149,5 @@
   <image class="bottom-three {{ bottom_three }}" src="../../images/12.png"></image>
   <image class="bottom-three2 {{ bottom_three }}" src="../../images/12.png"></image>
   <image class="bottom-four {{ bottom_four }}" src="../../images/10.png"></image>
-  <image class="bottom-four2 {{ bottom_four }}" src="../../images/10.png"></image>
+  <image class="bottom-four2 {{ bottom_four }}" src="../../images/10.png"></image> -->
 </view>

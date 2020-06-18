@@ -1,16 +1,20 @@
 //index.js
 //获取应用实例
-import LocalData from '../../utils/local.js'
 import Cain from '../../utils/Cain.js'
+import util from '../../utils/util.js'
 
 Page({
   data: {
     overlay: true
   },
   onLoad: function () {
-    this.setData(LocalData)
+    util.getInfo(this.precessData)
     wx.hideLoading()
     this.setData({ 'overlay': false })
+  },
+  precessData: function (res) {
+    let info = res.data[0]
+    this.setData(info);
   },
   touchStart: function (t) {
     this.setData({
@@ -62,6 +66,34 @@ Page({
       enName: "",
       title: "",
     })
+  },
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+    let shareObj = {
+      title: "我的简历查看",
+      path: 'pages/index/index',
+      success(res) {
+        // 转发成功之后的回调
+      },
+      fail(res) {
+        // 转发失败之后的回调
+        if (res.errMsg == 'shareAppMessage:fail cancel') {
+          // 用户取消转发
+        } else if (res.errMsg == 'shareAppMessage:fail') {
+          // 转发失败，其中  为详细失败信息
+            wx.showToast({
+                title: "哎呀，失败了",
+                icon: "none"
+            })
+        }
+      },
+      complete() {
+        // 转发结束之后的回调（转发成不成功都会执行）
+      }
+    };
+    return shareObj;
   },
   //打开/关闭手风琴项
   toggleAccordionItem(e) {

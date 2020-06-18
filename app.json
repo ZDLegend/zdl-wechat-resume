@@ -10,6 +10,7 @@
     "navigationStyle": "default",
     "navigationBarTextStyle": "black"
   },
+  "cloud": true,
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
